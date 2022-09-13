@@ -118,3 +118,14 @@ body{
     color: #ffffff;
     margin-top: 40px;
 }
+
+@media all and (max-width: 576px){
+    .input-field{
+        width: 80%;
+        font-size: 16px;
+    }
+
+    .heading-random-article{
+        font-size: 18px;
+    }
+}

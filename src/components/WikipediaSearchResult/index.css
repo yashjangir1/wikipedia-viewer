@@ -4,9 +4,6 @@
     background-color: #E7E7E8;
     padding: 10px 20px 10px 20px;
     margin-bottom: 20px;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
     text-align: left;
     border: none
 }
@@ -17,9 +14,14 @@
     cursor: pointer;
 }
 
+.thumbnail-and-title-container{
+    display: flex;
+    flex-direction: row;
+}
+
 .thumbnail{
-    height:70px;
-    width: 70px;
+    height:50px;
+    width: 50px;
     margin-right: 20px;
 }
 
@@ -29,6 +31,27 @@
 }
 
 .wiki-summary{
-    font-size: 18px;
+    font-size: 16px;
     color: #000000;
+}
+
+@media all and (max-width: 576px){
+    .thumbnail-and-title-container{
+        overflow: scroll;
+    }
+
+
+    .wiki-title{
+        font-size: 18px;
+    }
+
+    .wiki-summary{
+        font-size: 14px;
+        overflow: scroll;
+    }
+
+    .thumbnail{
+        width: 40px;
+        height: 40px;
+    }
 }

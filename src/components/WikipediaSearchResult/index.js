@@ -11,11 +11,11 @@ const WikipediaSearchResult = (props) => {
 
      return (
         <button className='search-result-container' onClick = {goToWikiPage}>
-            {imgUrl !== "" ? <img src={imgUrl} alt="thumbnail" className='thumbnail' /> : ""}
-            <div className='wiki-details-container'>
+            <div className="thumbnail-and-title-container">
+                {imgUrl !== "" ? <img src={imgUrl} alt="thumbnail" className='thumbnail' /> : ""}
                 <h1 className='wiki-title'>{title}</h1>
-                <p className='wiki-summary'>{summary}</p>
             </div>
+            <p className='wiki-summary'>{summary}</p>
         </button>
      )
 }
