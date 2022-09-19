@@ -19,6 +19,7 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: 80%;
 }
 
 .heading-random-article{
@@ -49,10 +50,13 @@ body{
 
 .input-container{
     position: relative;
+    align-self: center;
+    width: 100%;
+    max-width: 300px;
 }
 
 .input-field{
-    width: 300px;
+    width: 100%;
     height: 50px;
     font-size: 18px;
     color: #ffffff;
@@ -60,30 +64,15 @@ body{
     border: 5px solid #d96f32;
     border-radius: 40px;
     padding: 15px;
+    align-self: center;
+}
+
+.input-field-2{
+    max-width: 300px;
 }
 
 .input-field:focus{
     outline: none;
-}
-
-.cross-left{
-    height: 3px;
-    width: 20px;
-    background-color: #D96F32;
-    transform: rotate(45deg);
-    position: absolute;
-    right: 15px;
-    top: 50%;
-}
-
-.cross-right{
-    height: 3px;
-    width: 20px;
-    background-color: #D96F32;
-    transform: rotate(-45deg);
-    position: absolute;
-    right: 15px;
-    top: 50%;
 }
 
 .icon-search-para{
@@ -117,6 +106,16 @@ body{
     font-size: 25px;
     color: #ffffff;
     margin-top: 40px;
+}
+
+.animated-input{
+    animation: expand 0.5s;
+}
+
+@keyframes expand{
+    0%{
+        width: 40px;
+    }
 }
 
 @media all and (max-width: 576px){
